@@ -10,6 +10,5 @@ RUN bash install-docker-client.sh
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 COPY target/swarmpit.jar /usr/src/app/
-
 EXPOSE 8080
 CMD ["java", "-jar", "swarmpit.jar"]
